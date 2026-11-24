@@ -1,0 +1,27 @@
+package me.biggie.biggiesPlugin.listeners;
+
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
+import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerTeleportEvent;
+
+import javax.naming.Name;
+import java.awt.*;
+
+public class Teleportation implements Listener {
+    @EventHandler
+    public void onTeleport(PlayerTeleportEvent e){
+        Player player = e.getPlayer();
+        if (e.getCause() == PlayerTeleportEvent.TeleportCause.ENDER_PEARL){
+            e.setCancelled(true);
+            player.sendMessage(Component.text("You cannot use ender pearls!")
+                    .color(NamedTextColor.RED));
+        }
+
+
+
+    }
+
+}
