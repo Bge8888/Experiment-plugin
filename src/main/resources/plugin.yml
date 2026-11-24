@@ -1,0 +1,9 @@
+name: Biggies-plugin
+description: $description
+version: '${version}'
+
+main: me.biggie.biggiesPlugin.BiggiesPlugin
+api-version: '26.2'
+load: POSTWORLD
+
+authors: [ Biggie8888 ]
