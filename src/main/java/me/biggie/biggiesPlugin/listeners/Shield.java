@@ -25,7 +25,7 @@ public class Shield implements Listener {
                     Particle.WHITE_ASH, ply.getLocation().add(0,1.0,0),
                     40, 0.4,0.5,0.4,0.2
             );
-
+            ply.playSound(ply.getLocation(), Sound.BLOCK_FIRE_EXTINGUISH, 0.5f, 1.2f);
         }
 
     }
