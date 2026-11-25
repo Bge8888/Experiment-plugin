@@ -3,6 +3,7 @@ package me.biggie.biggiesPlugin;
 import me.biggie.biggiesPlugin.listeners.Connection;
 import me.biggie.biggiesPlugin.listeners.Shield;
 import me.biggie.biggiesPlugin.listeners.Teleportation;
+import me.biggie.biggiesPlugin.listeners.fart;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class BiggiesPlugin extends JavaPlugin {
@@ -14,7 +15,7 @@ public final class BiggiesPlugin extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new Connection(), this);
         getServer().getPluginManager().registerEvents(new Teleportation(), this);
         getServer().getPluginManager().registerEvents(new Shield(), this);
-
+        getServer().getPluginManager().registerEvents(new fart(), this);
     }
 
     @Override
